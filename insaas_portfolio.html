@@ -333,6 +333,25 @@
   }
   .dot-divider span { color: var(--text-muted); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; }
 
+  /* ── CLICKABLE CARD LINKS ── */
+  .project-card-link {
+    text-decoration: none; color: inherit; display: contents;
+  }
+  .project-card-link .project-card {
+    cursor: pointer;
+  }
+  .project-visit {
+    margin-top: 16px;
+    font-size: 0.8rem; font-weight: 600;
+    color: var(--accent); letter-spacing: 0.02em;
+    display: inline-flex; align-items: center; gap: 4px;
+    opacity: 0; transform: translateX(-4px);
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  .project-card:hover .project-visit {
+    opacity: 1; transform: translateX(0);
+  }
+
   /* ── SCROLL ANIMATIONS ── */
   .reveal {
     opacity: 0; transform: translateY(28px);
@@ -572,26 +591,77 @@
         </div>
       </div>
 
-      <!-- Web Clients -->
+      <!-- Paint Manager -->
+      <a href="https://paintmanager.co.uk/" target="_blank" rel="noopener" class="project-card-link">
       <div class="project-card reveal" style="transition-delay:0.16s">
         <div class="project-header">
-          <span class="project-badge badge-web">Web &amp; Infrastructure</span>
+          <span class="project-badge badge-web">Web &amp; SaaS · UK</span>
           <span class="project-num">06</span>
         </div>
         <div class="project-body">
-          <div class="project-client">Multiple Clients — UK · US · VC</div>
-          <h3 class="project-title">Paint Manager · Credit Freedom · Modern Technical Fund</h3>
-          <p class="project-desc">Three distinct client platforms: a UK SaaS for painting contractors, a US credit-advisory portal, and a VC firm's investor-facing web presence — each delivered end-to-end with full infrastructure management.</p>
+          <div class="project-client">Trades &amp; Field Services · United Kingdom</div>
+          <h3 class="project-title">Paint Manager</h3>
+          <p class="project-desc">Purpose-built quoting and job management SaaS for UK painting &amp; decorating contractors. Streamlines estimate creation, job tracking, material costing, and professional PDF quote delivery — built specifically around how decorators work.</p>
           <ul class="project-highlights">
-            <li>Full-stack development + server deployment</li>
-            <li>SSL, DNS, custom email configuration</li>
-            <li>Next.js · Tailwind · Linux · Nginx</li>
+            <li>Itemised quote builder with room dimensions &amp; paint coverage engine</li>
+            <li>Branded PDF quote generation &amp; client management</li>
+            <li>Full-stack build, server deployment &amp; SSL configuration</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag">Next.js</span><span class="tag">Tailwind</span><span class="tag">Linux</span><span class="tag">Nginx</span><span class="tag">SSL</span>
+          </div>
+          <div class="project-visit">Visit paintmanager.co.uk →</div>
+        </div>
+      </div>
+      </a>
+
+      <!-- Credit Freedom -->
+      <a href="https://creditfreedom.us/" target="_blank" rel="noopener" class="project-card-link">
+      <div class="project-card reveal" style="transition-delay:0.2s">
+        <div class="project-header">
+          <span class="project-badge badge-saas">FinTech · US</span>
+          <span class="project-num">07</span>
+        </div>
+        <div class="project-body">
+          <div class="project-client">Financial Services &amp; Credit Advisory · United States</div>
+          <h3 class="project-title">Credit Freedom</h3>
+          <p class="project-desc">A US-based digital platform helping individuals and small business owners build and leverage their credit profiles. Delivers structured credit-building pathways and business credit guidance in a clean, trust-first interface designed for financial empowerment.</p>
+          <ul class="project-highlights">
+            <li>Full-stack platform with mobile-responsive, SEO-optimised design</li>
+            <li>Structured credit guidance &amp; user journey architecture</li>
+            <li>End-to-end deployment with DNS, SSL &amp; custom email</li>
           </ul>
           <div class="project-tags">
             <span class="tag">Next.js</span><span class="tag">Tailwind</span><span class="tag">Linux</span><span class="tag">Nginx</span><span class="tag">DNS</span>
           </div>
+          <div class="project-visit">Visit creditfreedom.us →</div>
         </div>
       </div>
+      </a>
+
+      <!-- Modern Technical Fund -->
+      <a href="https://moderntechnicalfund.com/" target="_blank" rel="noopener" class="project-card-link">
+      <div class="project-card reveal" style="transition-delay:0.24s">
+        <div class="project-header">
+          <span class="project-badge badge-enterprise">Venture Capital · US</span>
+          <span class="project-num">08</span>
+        </div>
+        <div class="project-body">
+          <div class="project-client">Venture Capital — Pre-Seed &amp; Seed · United States</div>
+          <h3 class="project-title">Modern Technical Fund</h3>
+          <p class="project-desc">Web presence for a US first-check VC firm backing pre-seed technical startups in engineering, data, and security. Portfolio includes exits to Shopify (~$450M), Figma, and Google. Built to speak directly to technical founders — sharp, minimal, and credibility-first.</p>
+          <ul class="project-highlights">
+            <li>Minimal, high-impact design for a technical founder audience</li>
+            <li>Portfolio showcase, investment thesis &amp; community sections</li>
+            <li>Fast static deployment with full infrastructure management</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag">Next.js</span><span class="tag">Tailwind</span><span class="tag">Linux</span><span class="tag">Nginx</span><span class="tag">DNS</span>
+          </div>
+          <div class="project-visit">Visit moderntechnicalfund.com →</div>
+        </div>
+      </div>
+      </a>
 
     </div>
   </div>
